@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@drawable/fab"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -15,9 +16,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="УСЛОВНЫЙ ЭКРАН ВЫВОДА "
+            android:layout_margin="20dp"
             android:gravity="center"
-            />
+            android:text="УСЛОВНЫЙ ЭКРАН ВЫВОДА "
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
 
     </FrameLayout>
 
@@ -25,83 +28,94 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="2"
-        android:columnCount="4"
-        >
+        android:columnCount="4">
 
         <Button
-            android:text="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="2"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="3"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="="
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
+            android:text="1" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="2" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="3" />
+
+        <Button
             android:layout_rowSpan="4"
-            android:layout_gravity="fill"/>
-        <Button
-            android:text="4"
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_gravity="fill"
+            android:layout_margin="3dp"
+            android:text="=" />
+
         <Button
-            android:text="5"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="6"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="7"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="8"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="9"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
-        <Button
-            android:text="0"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
+            android:text="4" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="5" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="6" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="7" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="8" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="9" />
+
+        <Button
             android:layout_columnSpan="2"
-            android:layout_gravity="fill"/>
-        <Button
-            android:text="."
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_gravity="fill"
+            android:layout_margin="3dp"
+            android:text="0" />
+
         <Button
-            android:text="+"
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_margin="3dp"
+            android:text="." />
+
         <Button
-            android:text="-"
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_margin="3dp"
+            android:text="+" />
+
         <Button
-            android:text="*"
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_margin="3dp"
+            android:text="-" />
+
         <Button
-            android:text="/"
             android:layout_columnWeight="1"
-            android:layout_margin="3dp"/>
+            android:layout_margin="3dp"
+            android:text="*" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="/" />
 
 
-
-
-   </GridLayout>
-
+    </GridLayout>
 
 
 </LinearLayout>
