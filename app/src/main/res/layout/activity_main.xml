@@ -1,18 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fab"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="УСЛОВНЫЙ ЭКРАН ВЫВОДА "
+            android:textColor="@android:color/white"
+            android:textSize="26dp" />
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:columnCount="4">
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="1" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="2" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="3" />
+
+        <Button
+            android:layout_rowSpan="4"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="3dp"
+            android:text="=" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="4" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="5" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="6" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="7" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="8" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="9" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="3dp"
+            android:text="0" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="." />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="+" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="-" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="*" />
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="/" />
+
+
+    </GridLayout>
+
+
+</LinearLayout>
