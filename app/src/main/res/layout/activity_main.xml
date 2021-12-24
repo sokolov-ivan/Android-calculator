@@ -23,34 +23,18 @@
             android:inputType="numberDecimal"
             android:textColor="@android:color/white"
             android:textSize="16dp" />
-
-        <EditText
-            android:id="@+id/operation"
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:inputType="numberDecimal"
-            android:textColor="@android:color/white"
-            android:textSize="5dp" />
-
-        <EditText
-            android:id="@+id/numberFieldTwo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:inputType="numberDecimal"
-            android:textColor="@android:color/white"
-            android:textSize="16dp" />
-
+            android:text="тестовая кнопка"
+            android:id="@+id/button_test">
+        </Button>
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="здесь будет ответ"
             android:textColor="@android:color/white"
             android:textSize="16dp" />
 
