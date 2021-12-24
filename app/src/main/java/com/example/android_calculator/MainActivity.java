@@ -2,6 +2,7 @@ package com.example.android_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
             double value = Double.parseDouble(numberField.getText().toString());
             number.setNumber(value);
             result.setText(String.valueOf(number.getNumber()));
+        });
+
+        findViewById(R.id.button_two_activity).setOnClickListener(v -> {
+            Intent intent = new Intent(this,TwoActivity.class);
+            intent.putExtra("print",String.valueOf(number.getNumber()));
+            startActivity(intent);
         });
 
 
