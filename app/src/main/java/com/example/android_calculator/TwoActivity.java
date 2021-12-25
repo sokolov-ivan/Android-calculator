@@ -15,15 +15,14 @@ public class TwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-
-        Bundle arguments = getIntent().getExtras();
-        String name = arguments.get("print").toString();
-        printResult = (TextView)findViewById(R.id.numberField);
-        printResult.setText(String.valueOf(name));
-
+        printResult = (TextView) findViewById(R.id.numberFieldTwo);
+        String name = "";
+        Number number = (Number) getIntent().getParcelableExtra("Number");
+        name = number.getVal();
+        printResult.setText(name);
     }
-
 }
+
 
 
 
