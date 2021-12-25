@@ -24,5 +24,3 @@ public class TwoActivity extends AppCompatActivity {
 }
 
 
-
-
