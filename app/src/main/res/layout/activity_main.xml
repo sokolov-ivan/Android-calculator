@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/numberField"
+            android:id="@+id/number_field_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -25,7 +25,7 @@
             android:textSize="16dp" />
 
         <Button
-            android:id="@+id/button_test"
+            android:id="@+id/test_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="тестовая кнопка"></Button>
@@ -40,7 +40,7 @@
             android:textSize="16dp" />
 
         <Button
-            android:id="@+id/button_two_activity"
+            android:id="@+id/two_activity_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="кнопка для второй активити"></Button>

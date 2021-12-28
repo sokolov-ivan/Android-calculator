@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        numberField = (EditText) findViewById(R.id.numberField);
+        numberField = (EditText) findViewById(R.id.number_field_edit_text);
         result = (TextView) findViewById(R.id.result);
         Number number = new Number(numberField.getText().toString());   //
 
@@ -108,12 +108,12 @@ public class MainActivity extends AppCompatActivity {
             result.setText(value);
             number.setVal(value);
         }
-        findViewById(R.id.button_test).setOnClickListener(v -> {
+        findViewById(R.id.test_button).setOnClickListener(v -> {
             value = numberField.getText().toString();          //
             number.setVal(value);
             result.setText(value);
         });
-        findViewById(R.id.button_two_activity).setOnClickListener(v -> {
+        findViewById(R.id.two_activity_button).setOnClickListener(v -> {
             Intent intent = new Intent(this, TwoActivity.class);
             intent.putExtra("Number", number);   //Number.class.getSimpleName()  - настояшие имя файла
             startActivity(intent);
