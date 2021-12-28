@@ -21,6 +21,7 @@ public class TwoActivity extends AppCompatActivity {
         name = number.getVal();
         printResult.setText(name);
     }
+
 }
 
 

@@ -11,11 +11,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="3">
+        android:layout_weight="3"
+        android:orientation="vertical">
 
         <EditText
-            android:id="@+id/numberField"
+            android:id="@+id/number_field_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -23,12 +23,13 @@
             android:inputType="numberDecimal"
             android:textColor="@android:color/white"
             android:textSize="16dp" />
+
         <Button
+            android:id="@+id/test_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="тестовая кнопка"
-            android:id="@+id/button_test">
-        </Button>
+            android:text="тестовая кнопка"></Button>
+
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
@@ -37,12 +38,12 @@
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="16dp" />
+
         <Button
+            android:id="@+id/two_activity_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="кнопка для второй активити"
-            android:id="@+id/button_two_activity">
-        </Button>
+            android:text="кнопка для второй активити"></Button>
 
     </LinearLayout>
 
@@ -53,54 +54,48 @@
         android:columnCount="4">
 
         <Button
-            android:id="@+id/button_1"
+            android:id="@+id/one_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="1"
-            android:onClick="numberClick"/>
+            android:text="1" />
 
         <Button
-            android:id="@+id/button_2"
+            android:id="@+id/two_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="2"
-            android:onClick="numberClick"/>
+            android:text="2" />
 
         <Button
-            android:id="@+id/button_3"
+            android:id="@+id/three_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="3"
-            android:onClick="numberClick"/>
+            android:text="3" />
 
         <Button
+            android:id="@+id/delete_Click_button"
             android:layout_rowSpan="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="3dp"
-            android:text="delete"
-            android:onClick="deleteClick"/>
-        
-        <Button
-            android:id="@+id/button_4"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="4"
-            android:onClick="numberClick"/>
+            android:text="delete" />
 
         <Button
-            android:id="@+id/button_5"
+            android:id="@+id/four_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="5"
-            android:onClick="numberClick"/>
+            android:text="4" />
 
         <Button
-            android:id="@+id/button_6"
+            android:id="@+id/five_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="6"
-            android:onClick="numberClick"/>
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six_button"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:text="6" />
 
         <Button
             android:layout_rowSpan="3"
@@ -110,41 +105,36 @@
             android:text="=" />
 
         <Button
-            android:id="@+id/button_7"
+            android:id="@+id/seven_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="7"
-            android:onClick="numberClick"/>
+            android:text="7" />
 
         <Button
-            android:id="@+id/button_8"
+            android:id="@+id/eight_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="8"
-            android:onClick="numberClick"/>
+            android:text="8" />
 
         <Button
-            android:id="@+id/button_9"
+            android:id="@+id/nine_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="9"
-            android:onClick="numberClick"/>
+            android:text="9" />
 
         <Button
-            android:id="@+id/button_0"
+            android:id="@+id/zero_button"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="3dp"
-            android:text="0"
-            android:onClick="numberClick"/>
+            android:text="0" />
 
         <Button
-            android:id="@+id/button_zero"
+            android:id="@+id/point_button"
             android:layout_columnWeight="1"
             android:layout_margin="3dp"
-            android:text="."
-            android:onClick="numberClick"/>
+            android:text="." />
 
         <Button
             android:layout_columnWeight="1"
@@ -171,3 +161,12 @@
 
 
 </LinearLayout>
+
+
+
+
+
+
+
+
+
