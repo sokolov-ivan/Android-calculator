@@ -12,38 +12,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding">
 
         <EditText
             android:id="@+id/number_field_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/default_margin"
             android:gravity="center"
             android:inputType="numberDecimal"
             android:textColor="@android:color/white"
-            android:textSize="16dp" />
+            android:textSize="@dimen/default_text_size" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/test_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="тестовая кнопка"></Button>
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/name_test_button" />
 
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/default_margin"
             android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="16dp" />
+            android:textSize="@dimen/default_text_size" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/two_activity_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="кнопка для второй активити"></Button>
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/name_two_activation_button" />
 
     </LinearLayout>
 
@@ -53,110 +56,97 @@
         android:layout_weight="4"
         android:columnCount="4">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/one_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="1" />
+            style="@style/values_button"
+            android:text="@string/one_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/two_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="2" />
+            style="@style/values_button"
+            android:text="@string/two_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/three_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="3" />
+            style="@style/values_button"
+            android:text="@string/three_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/delete_Click_button"
+            style="@style/values_button"
             android:layout_rowSpan="1"
-            android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="3dp"
-            android:text="delete" />
+            android:text="@string/delete_Click_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/four_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="4" />
+            style="@style/values_button"
+            android:text="@string/four_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/five_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="5" />
+            style="@style/values_button"
+            android:text="@string/five_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/six_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="6" />
+            style="@style/values_button"
+            android:text="@string/six_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_rowSpan="3"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="3dp"
-            android:text="=" />
+            android:layout_margin="@dimen/answer_margin"
+            android:text="@string/answer" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="7" />
+            style="@style/values_button"
+            android:text="@string/seven_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="8" />
+            style="@style/values_button"
+            android:text="@string/eight_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="9" />
+            style="@style/values_button"
+            android:text="@string/nine_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_button"
             android:layout_columnSpan="2"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            android:layout_margin="3dp"
-            android:text="0" />
+            android:layout_margin="@dimen/zero_button_margin"
+            android:text="@string/zero_button" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/point_button"
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="." />
+            style="@style/values_button"
+            android:text="@string/point_button" />
 
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="+" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addition"
+            style="@style/values_button"
+            android:text="@string/addition" />
 
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="-" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/subtraction"
+            style="@style/values_button"
+            android:text="@string/subtraction" />
 
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="*" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/multiplication"
+            style="@style/values_button"
+            android:text="@string/multiplication" />
 
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_margin="3dp"
-            android:text="/" />
-
-
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/division"
+            style="@style/values_button"
+            android:text="@string/division" />
     </GridLayout>
 
 

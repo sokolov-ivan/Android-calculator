@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DD29D632"
+    android:background="@color/purple_200"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,8 +12,7 @@
         android:id="@+id/numberFieldTwo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="60dp"
         android:gravity="center"
         android:textColor="@android:color/white"
-        android:textSize="60dp" />
+        android:textSize="@dimen/text_size_two_activity" />
 </LinearLayout>

@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android-calculator</string>
     <string name="name_test_button">тестовая кнопка</string>
     <string name="name_two_activation_button">кнопка для второй активити</string>
     <string name="one_button">1</string>
