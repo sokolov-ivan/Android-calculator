@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button nine_button;
     Button zero_button;
     Button point_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
