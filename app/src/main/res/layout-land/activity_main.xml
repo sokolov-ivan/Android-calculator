@@ -12,48 +12,50 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:orientation="vertical"
-        android:padding="@dimen/default_padding">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/number_field_edit_text"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/default_margin"
+            android:layout_weight="3"
             android:gravity="center"
             android:inputType="numberDecimal"
             android:textColor="@android:color/white"
             android:textSize="@dimen/default_text_size" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/test_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:text="@string/name_test_button" />
-
         <TextView
             android:id="@+id/result"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/default_margin"
+            android:layout_weight="3"
             android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/default_text_size" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/two_activity_button"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:text="@string/name_two_activation_button" />
+            android:layout_weight="1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/test_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_margin"
+                android:layout_weight="1"
+                android:text="@string/name_test_button" />
+        </LinearLayout>
     </LinearLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="4"
-        android:columnCount="4">
+        android:layout_weight="1"
+        android:columnCount="5">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/one_button"
@@ -71,13 +73,6 @@
             android:text="@string/three_button" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/delete_Click_button"
-            style="@style/values_button"
-            android:layout_rowSpan="1"
-            android:layout_gravity="fill"
-            android:text="@string/delete_Click_button" />
-
-        <com.google.android.material.button.MaterialButton
             android:id="@+id/four_button"
             style="@style/values_button"
             android:text="@string/four_button" />
@@ -91,13 +86,6 @@
             android:id="@+id/six_button"
             style="@style/values_button"
             android:text="@string/six_button" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_rowSpan="3"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="@dimen/answer_margin"
-            android:text="@string/answer" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_button"
@@ -116,10 +104,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_button"
-            android:layout_columnSpan="2"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:layout_margin="@dimen/zero_button_margin"
+            style="@style/values_button"
             android:text="@string/zero_button" />
 
         <com.google.android.material.button.MaterialButton
@@ -146,6 +131,22 @@
             android:id="@+id/division"
             style="@style/values_button"
             android:text="@string/division" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delete_Click_button"
+            style="@style/values_button"
+            android:layout_columnSpan="1"
+            android:text="@string/delete_Click_button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/two_activity_button"
+            style="@style/values_button"
+            android:text="@string/show" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/values_button"
+            android:layout_columnSpan="3"
+            android:text="@string/answer" />
     </GridLayout>
 </LinearLayout>
 

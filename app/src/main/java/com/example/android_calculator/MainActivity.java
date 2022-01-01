@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText numberField;
     private TextView result;
     private String value;
-
     Button one_button;
     Button two_button;
     Button three_button;
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     Button zero_button;
     Button point_button;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         numberField = (EditText) findViewById(R.id.number_field_edit_text);
         result = (TextView) findViewById(R.id.result);
         Number number = new Number(numberField.getText().toString());   //
-
         one_button = (Button) findViewById(R.id.one_button);
         two_button = (Button) findViewById(R.id.two_button);
         three_button = (Button) findViewById(R.id.three_button);
@@ -49,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         nine_button = (Button) findViewById(R.id.nine_button);
         zero_button = (Button) findViewById(R.id.zero_button);
         point_button = (Button) findViewById(R.id.point_button);
-
         OnClickListener oMyButton = new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.point_button:
                         numberField.append(point_button.getText());
                         break;
-
                 }
             }
         };
@@ -124,8 +119,6 @@ public class MainActivity extends AppCompatActivity {
                 numberField.getText().delete(len - 1, len);     //удаляем последний элемент
             }
         });
-
-
     }
 
     @Override
@@ -133,7 +126,5 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putString("key", value);
     }
-
-
 }
 
