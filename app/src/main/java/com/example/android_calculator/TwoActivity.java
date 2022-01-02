@@ -15,7 +15,7 @@ public class TwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-        printResult = (TextView) findViewById(R.id.numberFieldTwo);
+        printResult = (TextView) findViewById(R.id.big_number_field);
         String name = "";
         Number number = (Number) getIntent().getParcelableExtra("Number");
         name = number.getVal();

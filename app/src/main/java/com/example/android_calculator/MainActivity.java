@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,16 +15,16 @@ public class MainActivity extends AppCompatActivity {
     private EditText numberField;
     private TextView result;
     private String value;
-    Button one_button;
-    Button two_button;
-    Button three_button;
-    Button four_button;
-    Button five_button;
-    Button six_button;
-    Button seven_button;
-    Button eight_button;
-    Button nine_button;
-    Button zero_button;
+    Button numberOneButton;
+    Button numberTwoButton;
+    Button numberThreeButton;
+    Button numberFourButton;
+    Button numberFiveButton;
+    Button numberSixButton;
+    Button numberSevenButton;
+    Button numberEightButton;
+    Button numberNineButton;
+    Button numberZeroButton;
     Button point_button;
 
     @Override
@@ -33,52 +32,52 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         numberField = (EditText) findViewById(R.id.number_field_edit_text);
-        result = (TextView) findViewById(R.id.result);
+        result = (TextView) findViewById(R.id.result_text_view);
         Number number = new Number(numberField.getText().toString());   //
-        one_button = (Button) findViewById(R.id.one_button);
-        two_button = (Button) findViewById(R.id.two_button);
-        three_button = (Button) findViewById(R.id.three_button);
-        four_button = (Button) findViewById(R.id.four_button);
-        five_button = (Button) findViewById(R.id.five_button);
-        six_button = (Button) findViewById(R.id.six_button);
-        seven_button = (Button) findViewById(R.id.seven_button);
-        eight_button = (Button) findViewById(R.id.eight_button);
-        nine_button = (Button) findViewById(R.id.nine_button);
-        zero_button = (Button) findViewById(R.id.zero_button);
+        numberOneButton = (Button) findViewById(R.id.number_one_button);
+        numberTwoButton = (Button) findViewById(R.id.number_two_button);
+        numberThreeButton = (Button) findViewById(R.id.number_three_button);
+        numberFourButton = (Button) findViewById(R.id.number_four_button);
+        numberFiveButton = (Button) findViewById(R.id.number_five_button);
+        numberSixButton = (Button) findViewById(R.id.number_six_button);
+        numberSevenButton = (Button) findViewById(R.id.number_seven_button);
+        numberEightButton = (Button) findViewById(R.id.number_eight_button);
+        numberNineButton = (Button) findViewById(R.id.number_nine_button);
+        numberZeroButton = (Button) findViewById(R.id.number_zero_button);
         point_button = (Button) findViewById(R.id.point_button);
         OnClickListener oMyButton = new OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.one_button:
-                        numberField.append(one_button.getText());
+                    case R.id.number_one_button:
+                        numberField.append(numberOneButton.getText());
                         break;
-                    case R.id.two_button:
-                        numberField.append(two_button.getText());
+                    case R.id.number_two_button:
+                        numberField.append(numberTwoButton.getText());
                         break;
-                    case R.id.three_button:
-                        numberField.append(three_button.getText());
+                    case R.id.number_three_button:
+                        numberField.append(numberThreeButton.getText());
                         break;
-                    case R.id.four_button:
-                        numberField.append(four_button.getText());
+                    case R.id.number_four_button:
+                        numberField.append(numberFourButton.getText());
                         break;
-                    case R.id.five_button:
-                        numberField.append(five_button.getText());
+                    case R.id.number_five_button:
+                        numberField.append(numberFiveButton.getText());
                         break;
-                    case R.id.six_button:
-                        numberField.append(six_button.getText());
+                    case R.id.number_six_button:
+                        numberField.append(numberSixButton.getText());
                         break;
-                    case R.id.seven_button:
-                        numberField.append(seven_button.getText());
+                    case R.id.number_seven_button:
+                        numberField.append(numberSevenButton.getText());
                         break;
-                    case R.id.eight_button:
-                        numberField.append(eight_button.getText());
+                    case R.id.number_eight_button:
+                        numberField.append(numberEightButton.getText());
                         break;
-                    case R.id.nine_button:
-                        numberField.append(nine_button.getText());
+                    case R.id.number_nine_button:
+                        numberField.append(numberNineButton.getText());
                         break;
-                    case R.id.zero_button:
-                        numberField.append(zero_button.getText());
+                    case R.id.number_zero_button:
+                        numberField.append(numberZeroButton.getText());
                         break;
                     case R.id.point_button:
                         numberField.append(point_button.getText());
@@ -86,16 +85,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
-        one_button.setOnClickListener(oMyButton);
-        two_button.setOnClickListener(oMyButton);
-        three_button.setOnClickListener(oMyButton);
-        four_button.setOnClickListener(oMyButton);
-        five_button.setOnClickListener(oMyButton);
-        six_button.setOnClickListener(oMyButton);
-        seven_button.setOnClickListener(oMyButton);
-        eight_button.setOnClickListener(oMyButton);
-        nine_button.setOnClickListener(oMyButton);
-        zero_button.setOnClickListener(oMyButton);
+        numberOneButton.setOnClickListener(oMyButton);
+        numberTwoButton.setOnClickListener(oMyButton);
+        numberThreeButton.setOnClickListener(oMyButton);
+        numberFourButton.setOnClickListener(oMyButton);
+        numberFiveButton.setOnClickListener(oMyButton);
+        numberSixButton.setOnClickListener(oMyButton);
+        numberSevenButton.setOnClickListener(oMyButton);
+        numberEightButton.setOnClickListener(oMyButton);
+        numberNineButton.setOnClickListener(oMyButton);
+        numberZeroButton.setOnClickListener(oMyButton);
         point_button.setOnClickListener(oMyButton);
 
         if (savedInstanceState != null && savedInstanceState.containsKey("key")) {

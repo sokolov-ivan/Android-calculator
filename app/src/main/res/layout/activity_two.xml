@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/numberFieldTwo"
+        android:id="@+id/big_number_field"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
